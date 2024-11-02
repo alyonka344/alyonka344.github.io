@@ -26,23 +26,30 @@
     <main class="main">
         <section id="MyPaintings" class="my-paintings my-paintings__image">
             <h2 class="my-paintings__header my-paintings__header__location">My Paintings.</h2>
-            <img src="images/reeds.png" alt="First painting" class="my-paintings__painting-item"/>
-            <img src="images/bridge.png" alt="Second painting" class="my-paintings__painting-item"/>
-            <img src="images/flowers.png" alt="Third painting" class="my-paintings__painting-item"/>
-            <img src="images/flowers2.png" alt="Fourth painting" class="my-paintings__painting-item"/>
-            <img src="images/boxes.png" alt="Fifth painting" class="my-paintings__painting-item"/>
-            <img src="images/ovals.png" alt="Sixth painting" class="my-paintings__painting-item"/>
+            <div class="my-paintings__images">
+                <img src="images/reeds.png" alt="First painting" class="my-paintings__painting-item"/>
+                <img src="images/bridge.png" alt="Second painting" class="my-paintings__painting-item"/>
+                <img src="images/flowers.png" alt="Third painting" class="my-paintings__painting-item"/>
+                <img src="images/flowers2.png" alt="Fourth painting" class="my-paintings__painting-item"/>
+                <img src="images/boxes.png" alt="Fifth painting" class="my-paintings__painting-item"/>
+                <img src="images/ovals.png" alt="Sixth painting" class="my-paintings__painting-item"/>
+            </div>
         </section>
 
         <section id="AboutMe" class="about-me">
             <h2 class="about-me__header">About me.</h2>
-            <div class="about-me__content about-me__content__center">I study at ITMO University in Saint-Petersburg and learn programming.
-                My hobby is painting and making art-objects with my hands.</div>
-            <img src="images/alyonaseats.png" alt="Alyona seats" class="about-me__image"/>
+            <div class="about-me__content">
+                <img src="images/alyonaseats.png" alt="Alyona seats" class="about-me__image"/>
+                <div class="about-me__right-part">
+                    <section class="about-me__text about-me__content__center">I study at ITMO University in Saint-Petersburg and learn programming.
+                        My hobby is painting and making art-objects with my hands.</section>
+                    <img src="images/musya1.png" alt="Musya" class="about-me__musya-image">
+                </div>
+            </div>
         </section>
 
-        <article>
-            <h2 class="my-favourite-artists__header">My favourite artists</h2>
+        <h2 class="my-favourite-artists__header">My favourite artists</h2>
+        <article class="my-favourite-artists">
             <div class="artist-item">
             <h3 class="artist-item__author-name">Claude Monet</h3>
                 <p class="artist-item__content"><i>Oscar-Claude Monet</i> was a French painter and founder of
@@ -68,22 +75,54 @@
                 (life-drawing, sketching and anatomy) at the age of 30.</p>
             </div>
         </article>
+        <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Данные 1</td>
+                <td>Данные 2</td>
+                <td>Данные 3</td>
+            </tr>
+            <tr>
+                <td>Данные 4</td>
+                <td>Данные 5</td>
+                <td>Данные 6</td>
+            </tr>
+            <tr>
+                <td>Данные 7</td>
+                <td>Данные 8</td>
+                <td>Данные 9</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
 
         <aside class="zabeyki">
             <h2 class="zabeyki__header">Zabeyki.</h2>
-            <img src="images/zabeyka1.png" alt="First zabeyka" class="my-paintings__painting-item"/>
-            <img src="images/zabeyka2.png" alt="Second zabeyka" class="my-paintings__painting-item"/>
-            <img src="images/zabeyka3.png" alt="Third painting" class="my-paintings__painting-item"/>
+            <div class="zabeyki__images">
+                <img src="images/zabeyka1.png" alt="First zabeyka" class="my-paintings__painting-item"/>
+                <img src="images/zabeyka2.png" alt="Second zabeyka" class="my-paintings__painting-item"/>
+                <img src="images/zabeyka3.png" alt="Third zabeyka" class="my-paintings__painting-item"/>
+            </div>
         </aside>
     </main>
     <footer class="footer">
         <section class="contacts" id="Contacts">
         <h2 class="contacts__header">Contacts</h2>
-        <ul>
-            <li class="contacts__link"><a href="https://t.me/imnotfromthiswrld">telegram</a></li>
-            <li class="contacts__link">email: aaatttyyy@bk.ru</li>
-        </ul>
+        <div class="contacts__content">
             <img src="images/isixone.png" alt="Isixone" class="contacts__image"/>
+            <ul>
+                <li class="contacts__link"><a href="https://t.me/imnotfromthiswrld">telegram</a></li>
+                <li class="contacts__link">email: aaatttyyy@bk.ru</li>
+            </ul>
+        </div>
         </section>
     </footer>
 </body>

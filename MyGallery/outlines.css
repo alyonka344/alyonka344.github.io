@@ -308,6 +308,7 @@ table {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
+    width: 100%;
 }
 
 .table {
@@ -315,3 +316,15 @@ table {
     justify-content: center;
 }
 
+.delete-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.delete-button:hover {
+    color: darkred;
+}

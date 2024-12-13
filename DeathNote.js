@@ -1,7 +1,7 @@
 ﻿document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("phrase-form");
     const personInput = document.getElementById("person-input");
-    const phrasesTableBody = document.querySelector("#phrasesTable tbody");
+    const phrasesTableBody = document.querySelector("#phrases-table tbody");
 
     function loadFromLocalStorage() {
         const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];

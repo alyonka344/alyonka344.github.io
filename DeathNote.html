@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="painting, exhibition, gallery">
+  <meta name="description" content="Exhibition by great artist Alyona Kholmogorova with exclusive paintings">
+  <title>Exhibition by Alyona</title>
+  <link href="outlines.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <script src="DeathNote.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+<header class="header">
+  <nav class="menu">
+    <ol class="menu__list">
+      <li class="menuitem"><a href="MyGallery.html" class="menu__link">My paintings</a></li>
+      <li class="menuitem"><a href="AboutMe.html" class="menu__link">About me</a></li>
+      <li class="menuitem"><a href="DeathNote.html" class="menu__link">Death note</a></li>
+      <li class="menuitem menu__item__position-left"><a href="#Contacts" class="menu__link">Contacts</a></li>
+    </ol>
+  </nav>
+  <h1 class="header__name-of-site">Death note.</h1>
+</header>
+<main class="main">
+  <section>
+    <h2>Add a person</h2>
+    <form id="phrase-form">
+      <label for="person-input">Enter your person name:</label>
+      <input type="text" id="person-input" name="person" required>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+  <section>
+    <h2>Notes</h2>
+    <table id="phrases-table">
+      <thead>
+      <tr>
+        <th>№</th>
+        <th>Person name</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer class="footer">
+  <section class="contacts" id="Contacts">
+    <h2 class="contacts__header">Contacts</h2>
+    <div class="contacts__content">
+      <img src="images/isixone.png" alt="Isixone" class="contacts__image"/>
+      <ul>
+        <li class="contacts__link"><a href="https://t.me/imnotfromthiswrld">telegram</a></li>
+        <li class="contacts__link">email: aaatttyyy@bk.ru</li>
+      </ul>
+    </div>
+  </section>
+</footer>
+</body>
+</html>

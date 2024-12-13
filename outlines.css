@@ -1,0 +1,404 @@
+.header__name-of-site {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    color: #0703AB;
+    padding: 50px 0 0;
+}
+
+.body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD9D3;
+    height: 100vh;
+}
+
+.header {
+    background-color: #FFD9D3;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    position: fixed;
+    background-color: #FFD9D3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.menu__list {
+    padding: 0 40px 0 40px;
+    list-style: none;
+    margin: 0;
+    gap: 30px;
+    display: flex;
+}
+
+.menu__item {
+}
+
+.menu__link {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #0703AB;
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+.load-time {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #0703AB;
+    font-size: 20px;
+}
+.menu__link:hover {
+    font-style: italic;
+}
+
+.menu__link.active {
+    font-weight: 500;
+}
+
+.menu__item__position-left {
+    margin-left: auto;
+    float: right;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.my-paintings__images {
+    display: flex;
+}
+
+.my-paintings__image {
+    background-image: url("images/tree.jpg");
+}
+
+.my-paintings__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: #5E7600;
+}
+
+.my-paintings__painting-item {
+    height: 400px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.my-paintings__header__location {
+    margin-left: 10px;
+}
+
+.about-me__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #0703AB;
+    text-shadow:
+            4px 4px 0 #FAFAFA,
+            -4px -4px 0 #FAFAFA,
+            -4px 4px 0 #FAFAFA,
+            4px -4px 0 #FAFAFA;
+    text-align: center;
+}
+
+.about-me__content {
+    display: flex;
+    height: 100%;
+    align-self: stretch;
+}
+
+.about-me__text {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    color: #0703AB;
+    /*border: #0703AB solid 2px;*/
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 6px 6px 16px rgba(07, 03, 171, 0.5);
+}
+
+.about-me__right-part {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-me__musya-image {
+    height: 200px;
+    width: auto;
+    align-self: center;
+    justify-content: center;
+}
+
+.about-me__content__center {
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-me__image {
+    height: 400px;
+    width: auto;
+}
+
+.artist-item {
+    background-color: #0703AB;
+    border-radius: 20px;
+    font-family: "Kanit", sans-serif;
+    color: #FFD9D3;
+    padding: 20px;
+    margin: 20px 50px;
+    width: 100%;
+}
+
+.my-favourite-artists {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-favourite-artists__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 50px;
+    color: #0703AB;
+    text-align: center;
+}
+
+.artist-item__author-name {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.artist-item__content {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.zabeyki__images {
+    display: flex;
+}
+
+.zabeyki__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #5E7600;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.contacts__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #0703AB;
+    font-style: italic;
+    text-align: center;
+}
+
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__link {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #0703AB;
+    text-transform: uppercase;
+    display: block;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.contacts__image {
+    height: 350px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__musya-image {
+        display: none;
+    }
+    .about-me__image {
+        height: 200px;
+        width: auto;
+        align-self: flex-end;
+    }
+}
+
+thead {
+    background-color: #FFD9D3;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 3px solid #0703AB;
+    text-align: center;
+}
+
+th {
+    background-color: #0703AB;
+    color: #FFD9D3;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FAFAFA;
+    color: #0703AB;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFD9D3;
+    color: #0703AB;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+tbody tr:hover {
+    background-color: #5E7600;
+    color: #FFD9D3;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: #0703AB;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+.comments {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.comments__header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.comments__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.comments__item {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.comments__item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comments__item-body {
+    font-size: 14px;
+}
+
+.comments__loader {
+    font-size: 18px;
+    color: #666;
+}
+
+.comments__error {
+    color: red;
+    font-size: 16px;
+}
+
+.comments__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.comments__loader-gif {
+    width: 100px;
+    height: 100px;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader__gif {
+    width: 100px; /* Ширина гифки */
+    height: 100px; /* Высота гифки */
+}

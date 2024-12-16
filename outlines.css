@@ -492,6 +492,11 @@ table {
     text-align: center;
 }
 
+.swiper-container {
+    position: relative;
+    z-index: 1;
+}
+
 /*#paintings-gallery {*/
 /*    overflow: hidden; !* Это скроет изображения, выходящие за пределы контейнера *!*/
 /*}*/

@@ -6,8 +6,8 @@
   <meta name="description" content="Exhibition by great artist Alyona Kholmogorova with exclusive paintings">
   <title>Exhibition by Alyona</title>
   <link href="outlines.css" rel="stylesheet">
-  <script src="index.js" defer></script>
-  <script src="DeathNote.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/DeathNote.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
@@ -26,15 +26,15 @@
 </header>
 <main class="main">
   <section>
-    <h2>Add a person</h2>
+    <h2 class="add-person__header">Add a person</h2>
     <form id="phrase-form">
-      <label for="person-input">Enter your person name:</label>
-      <input type="text" id="person-input" name="person" required>
-      <button type="submit">Add</button>
+      <label class="add-person__enter" for="person-input">Enter your person name:</label>
+      <input class="add-person__input" type="text" id="person-input" name="person" required>
+      <button class="add-person__button" type="submit">Add</button>
     </form>
   </section>
   <section>
-    <h2>Notes</h2>
+    <h2 class="notes">Notes</h2>
     <table id="phrases-table">
       <thead>
       <tr>

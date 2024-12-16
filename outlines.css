@@ -31,6 +31,7 @@
     left: 0;
     width: 100%;
     padding: 20px 0;
+    z-index: 1000;
 }
 
 .menu__list {
@@ -86,6 +87,7 @@
 
 .my-paintings__image {
     background-image: url("images/tree.jpg");
+    height: 600px;
 }
 
 .my-paintings__header {
@@ -284,7 +286,7 @@ tbody tr:nth-child(even) {
     text-decoration: none;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 tbody tr:nth-child(odd) {
@@ -293,7 +295,7 @@ tbody tr:nth-child(odd) {
     text-decoration: none;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 tbody tr:hover {
@@ -301,8 +303,6 @@ tbody tr:hover {
     color: #FFD9D3;
     text-decoration: none;
     font-family: "Kanit", sans-serif;
-    font-weight: 700;
-    font-size: 10px;
 }
 
 table {
@@ -320,10 +320,10 @@ table {
 .delete-button {
     background: none;
     border: none;
-    color: #0703AB;
+    color: #FFD9D3;
     cursor: pointer;
     font-size: 16px;
-    padding: 0;
+    padding: 4px;
 }
 
 .delete-button:hover {
@@ -391,14 +391,107 @@ table {
     height: 100px;
 }
 
-.loader {
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    /*width: 100%;*/
+    /*height: auto;*/
+    object-fit: cover;
+}
+
+.swiper-wrapper {
     display: flex;
-    flex-direction: column;
+}
+
+.swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.my-paintings__painting-item {
+    height: 400px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+.add-person__header {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #5E7600;
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+.add-person__enter {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    color: #0703AB;
+    margin: 0 10px;
+}
+
+.add-person__input {
+    background-color: #0703AB;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #FFD9D3;
     justify-content: center;
 }
 
-.loader__gif {
-    width: 100px; /* Ширина гифки */
-    height: 100px; /* Высота гифки */
+.add-person__input:hover {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 6px 6px 16px rgba(07, 03, 171, 0.5);
 }
+
+.add-person__button {
+    background-color: #FFD9D3;
+    border: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #0703AB;
+    padding: 0 20px;
+    margin-left: 20px;
+}
+
+.add-person__button:hover {
+    border-radius: 20px;
+    box-shadow: 6px 6px 16px rgba(07, 03, 171, 0.5);
+    font-weight: 700;
+}
+
+.notes {
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #5E7600;
+    font-style: italic;
+    text-align: center;
+}
+
+/*#paintings-gallery {*/
+/*    overflow: hidden; !* Это скроет изображения, выходящие за пределы контейнера *!*/
+/*}*/

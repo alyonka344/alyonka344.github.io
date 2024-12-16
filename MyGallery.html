@@ -7,8 +7,11 @@
     Alyona Kholmogorova with exclusive paintings">
     <title>Exhibition by Alyona</title>
     <link href="outlines.css" rel="stylesheet" >
-    <script src="index.js" defer></script>
-    <script src="Comments.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/Comments.js" defer></script>
+    <script src="js/Swiper.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -28,13 +31,15 @@
     <main class="main">
         <section id="MyPaintings" class="my-paintings my-paintings__image">
             <h2 class="my-paintings__header my-paintings__header__location">My Paintings.</h2>
-            <div class="my-paintings__images">
-                <img src="images/reeds.png" alt="First painting" class="my-paintings__painting-item"/>
-                <img src="images/bridge.png" alt="Second painting" class="my-paintings__painting-item"/>
-                <img src="images/flowers.png" alt="Third painting" class="my-paintings__painting-item"/>
-                <img src="images/flowers2.png" alt="Fourth painting" class="my-paintings__painting-item"/>
-                <img src="images/boxes.png" alt="Fifth painting" class="my-paintings__painting-item"/>
-                <img src="images/ovals.png" alt="Sixth painting" class="my-paintings__painting-item"/>
+            <div class="swiper-container" id="paintings-gallery">
+                <div class="my-paintings__images swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/reeds.png" alt="First painting" class="my-paintings__painting-item"/></div>
+                    <div class="swiper-slide"><img src="images/bridge.png" alt="Second painting" class="my-paintings__painting-item"/></div>
+                    <div class="swiper-slide"><img src="images/flowers.png" alt="Third painting" class="my-paintings__painting-item"/></div>
+                    <div class="swiper-slide"><img src="images/flowers2.png" alt="Fourth painting" class="my-paintings__painting-item"/></div>
+                    <div class="swiper-slide"><img src="images/boxes.png" alt="Fifth painting" class="my-paintings__painting-item"/></div>
+                    <div class="swiper-slide"><img src="images/ovals.png" alt="Sixth painting" class="my-paintings__painting-item"/></div>
+                </div>
             </div>
         </section>
 
@@ -54,9 +59,6 @@
                     <img src="images/krutyak2.gif" alt="Loading..." class="comments__loader-gif">
                 </div>
             </div>
-<!--            <label for="comment-input">Enter your comment:</label>-->
-<!--            <input type="text" id="comment-input" name="comment" required>-->
-<!--            <button type="submit">Send</button>-->
             <form id="comment">
                 <h2>Оставьте отзыв</h2>
                 <label for="comment__sender-name">Ваше имя:</label>
